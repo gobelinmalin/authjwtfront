@@ -15,7 +15,9 @@ function App({ pathBack, pathReact, component }) {
       .then((data) => localStorage.setItem("profil", JSON.stringify(data.user.result[0])));
   }, []);
 
-  console.log("ok");
+  // if(err) {
+  //   history.push(/signup)
+  // }
 
   return <Route path={pathReact} component={component} />;
 }
